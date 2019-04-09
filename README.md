@@ -49,7 +49,21 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 ![undistort_output](./examples/undistort_output.png)
 
 ### Step 3: Use color transforms, gradients
+Mutiple color transforms are used in this project. Then combine these color transforms to filter the edge of image.
 
+#### 1. Gradient Sobel x 
+![sobelx](./output_images/color_transform/sobelx.png)
+####2. Gradient Sobel y 
+![sobely](./output_images/color_transform/sobely.png)
+#### 3. Gradient magnitude
+![magnitude](./output_images/color_transform/magnitude.png)
+#### 4. Gradient direction
+![direction](./output_images/color_transform/direction.png)
+#### 5. HLS Color Space
+![HLS](./output_images/color_transform/HLS.png)
+
+#### Here is an example of a binary result from multiple thresholds:
+![combined](./output_images/color_transform/combined.png)
 
 ### Pipeline (single images)
 
