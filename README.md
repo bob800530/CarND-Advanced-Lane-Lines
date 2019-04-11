@@ -1,9 +1,8 @@
 # Self-Driving Car Engineer Nanodegree
 
 ## **Advanced Lane Finding on the Road** 
-
-![Output](./examples/example_output.jpg)
-
+<img src="./examples/example_output.jpg" width = "1000" alt="magnitude" align=center />
+<br>
 ---
 ## Overview
 
@@ -42,15 +41,24 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 Mutiple color transforms are used in this project. Then combine these color transforms to filter the edge of image.
 
 #### 1. Gradient Sobel x 
-![sobelx](./output_images/color_transform/sobelx.png)
+<img src="./output_images/color_transform/sobelx.png" width = "800" alt="sobelx" align=center />
+<br>
+
 ####2. Gradient Sobel y 
-![sobely](./output_images/color_transform/sobely.png)
+<img src="./output_images/color_transform/sobely.png" width = "800" alt="sobely" align=center />
+<br>
+
 #### 3. Gradient magnitude
-![magnitude](./output_images/color_transform/magnitude.png)
+<img src="./output_images/color_transform/magnitude.png" width = "800" alt="magnitude" align=center />
+<br>
+
 #### 4. Gradient direction
-![direction](./output_images/color_transform/direction.png)
+<img src="./output_images/color_transform/direction.png" width = "800" alt="direction" align=center />
+<br>
+
 #### 5. HLS Color Space
-![HLS](./output_images/color_transform/HLS.png)
+<img src="./output_images/color_transform/HLS.png" width = "800" alt="HLS" align=center />
+<br>
 
 ### Step 4: Apply a perspective transform to rectify binary image ("birds-eye view").
 The code for my perspective transform, which appears in lines 10 through 31 in the file `./examples/curve_perspective.py` (output_images/examples/example.py).  This .py file takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
@@ -92,7 +100,7 @@ Then, detect lane pixels in Sliding Windows. Find the max value of every windows
 <br>
 
 Use these lane pixels to fit a polynomial. By this way, we could detect a curve.
-<img src="./output_images/test4_poly.jpg" width = "500" alt="test4_poly" align=center />
+<img src="./output_images/test4_poly.png" width = "500" alt="test4_poly" align=center />
 <br>
 
 ### Step 6: Determine the curvature of the lane and vehicle position with respect to center.
@@ -104,6 +112,9 @@ The way to get vehicle position. Just to find the center of image. Then compare 
 ### Step 7: Warp the detected lane boundaries back onto the original image.
 After we get the lane boundaries by mentioned steps, we could use it to lane boundaries.
 Now it's time to warp the detected lane boundaries back onto the original image. Cover translucent lane boundaries onto the original image.
+
+<img src="./output_images/wrap_test4.jpg" width = "500" alt="test4_poly" align=center />
+<br>
 
 ### Step 8: Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position
 In addition to cover translucent lane boundaries onto the original image, we should show up numerical estimation of lane curvature and vehicle position too.
