@@ -3,6 +3,7 @@
 ## **Advanced Lane Finding on the Road** 
 <img src="./examples/example_output.jpg" width = "1000" alt="magnitude" align=center />
 <br>
+
 ---
 ## Overview
 
@@ -44,7 +45,7 @@ Mutiple color transforms are used in this project. Then combine these color tran
 <img src="./output_images/color_transform/sobelx.png" width = "800" alt="sobelx" align=center />
 <br>
 
-####2. Gradient Sobel y 
+#### 2. Gradient Sobel y 
 <img src="./output_images/color_transform/sobely.png" width = "800" alt="sobely" align=center />
 <br>
 
